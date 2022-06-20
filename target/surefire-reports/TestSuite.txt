@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 141.52 sec <<< FAILURE! - in TestSuite
+testSignInError(scripts.CarvanaTest)  Time elapsed: 11.211 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button width="100%" data-cv="sign-in-submit" type="submit" disabled="" data-qa="button-base" class="ButtonBase-c01aoz-0 BlueButton-sc-133183u-0 nqLpU">...</button> is not clickable at point (720, 391). Other element would receive the click: <form data-qa="account-modal-forms-wrapper" class="AccountModalstyles__AccountModalFormsWrapper-sc-94oom3-2 gfZhNE">...</form>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Ilkins-MBP.hsd1.il.comcast.net', ip: '2601:245:4201:f350:0:0:0:ae45%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/br/k7_d2_bd441...}, goog:chromeOptions: {debuggerAddress: localhost:62251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3bfd66e5e8437be10f27a8912baf4e2
+	at scripts.CarvanaTest.testSignInError(CarvanaTest.java:86)
+
+testSearchResultTiles(scripts.CarvanaTest)  Time elapsed: 47.913 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at scripts.CarvanaTest.testSearchResultTiles(CarvanaTest.java:168)
+
